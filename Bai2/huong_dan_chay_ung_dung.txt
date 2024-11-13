@@ -1,0 +1,45 @@
+
+## Hướng Dẫn Chạy Ứng Dụng Python
+
+### Bước 1: Cài Đặt Môi Trường Ảo
+1. Mở terminal (hoặc Command Prompt trên Windows).
+2. Di chuyển đến thư mục chứa source code của bạn.
+3. Tạo môi trường ảo:
+   ```bash
+   python -m venv venv
+   ```
+4. Kích hoạt môi trường ảo:
+   - Trên Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - Trên macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+### Bước 2: Cài Đặt Các Gói Phụ Thuộc
+1. Cài đặt các gói cần thiết từ file `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Bước 3: Chạy Migrations (Tạo Bảng Trong CSDL)
+1. Chạy file `migrate.py` để tạo database và bảng:
+   ```bash
+   python migrate.py
+   ```
+
+### Bước 4: Chạy Ứng Dụng
+1. Chạy ứng dụng từ file `app.py`:
+   ```bash
+   python app.py
+   ```
+
+### Bước 5: Tắt Môi Trường Ảo
+1. Khi xong, tắt môi trường ảo:
+   ```bash
+   deactivate
+   ```
+
+---
